@@ -17,14 +17,16 @@ class ImagesCoordinator: Coordinator {
 
     func start() {
         let imagesCoordinator = ImagesViewController.instantiate()
-//        let imagesViewModel = ImagesViewModel()
+        let imagesViewModel = ImagesViewModel()
         imagesCoordinator.coordinator = self
-//        imagesCoordinator.viewModel = imagesViewModel
+        imagesCoordinator.viewModel = imagesViewModel
         navigationController.pushViewController(imagesCoordinator, animated: true)
     }
     
-    func displayPresent() {
-        let presentCoordinator = PresentCoordinator(navigationController: navigationController)
+    func displayPresent(atFoto: UIImage?, number fromCount: String) {
+        let presentCoordinator = PresentCoordinator(navigationController: navigationController,
+                                                    atFoto: atFoto,
+                                                    number: fromCount)
         presentCoordinator.start()
     }
     

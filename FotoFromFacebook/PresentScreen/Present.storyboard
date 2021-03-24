@@ -17,25 +17,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aRl-bo-cgw">
-                                <rect key="frame" x="0.0" y="76" width="414" height="786"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-qs-RDa">
+                                <rect key="frame" x="24" y="76" width="366" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="97Q-Ad-7Vg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rfI-0W-sDJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rfI-0W-sDJ" firstAttribute="bottom" secondItem="aRl-bo-cgw" secondAttribute="bottom" id="4No-Ao-Gk9"/>
+                            <constraint firstItem="aRl-bo-cgw" firstAttribute="top" secondItem="Enz-qs-RDa" secondAttribute="bottom" constant="24" id="FEB-Lu-qpy"/>
+                            <constraint firstItem="rfI-0W-sDJ" firstAttribute="trailing" secondItem="Enz-qs-RDa" secondAttribute="trailing" constant="24" id="IEc-dM-ocq"/>
+                            <constraint firstItem="Enz-qs-RDa" firstAttribute="top" secondItem="rfI-0W-sDJ" secondAttribute="top" constant="32" id="OTF-Vl-L7r"/>
                             <constraint firstItem="rfI-0W-sDJ" firstAttribute="trailing" secondItem="aRl-bo-cgw" secondAttribute="trailing" id="gZq-ag-Ne8"/>
                             <constraint firstItem="aRl-bo-cgw" firstAttribute="leading" secondItem="rfI-0W-sDJ" secondAttribute="leading" id="kUV-hw-IOJ"/>
-                            <constraint firstItem="aRl-bo-cgw" firstAttribute="top" secondItem="rfI-0W-sDJ" secondAttribute="top" constant="32" id="rch-9f-c6J"/>
+                            <constraint firstItem="Enz-qs-RDa" firstAttribute="leading" secondItem="rfI-0W-sDJ" secondAttribute="leading" constant="24" id="r7h-3e-KJT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="aRl-bo-cgw" id="2lu-Fp-DZy"/>
+                        <outlet property="numberLabel" destination="Enz-qs-RDa" id="FIY-ic-Ilx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYn-Vc-woj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="201" y="135"/>
+            <point key="canvasLocation" x="200.00000000000003" y="134.59821428571428"/>
         </scene>
     </scenes>
     <resources>

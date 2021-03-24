@@ -18,10 +18,27 @@ class LoginViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        setupLogoImage()
+        
+        setupEmailTextField()
+        setupPasswordTextField()
+    }
+    
+    func setupLogoImage() {
+        logoImageView.image = UIImage(named: "Facebook_Logo")
+    }
+    
+    func setupEmailTextField() {
+        emailTextField.placeholder = "Entered your Email"
+    }
+    
+    func setupPasswordTextField() {
+        passwordTextField.placeholder = "Entered your Password"
     }
 
-    @IBAction func tappedLoginButton(_ sender: Any) {
-        
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        coordinator?.displayImages()
     }
+    
 }
