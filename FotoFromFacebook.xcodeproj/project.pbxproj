@@ -80,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				64912848260B538B00DEFB7D /* FotoFromFacebook */,
+				6491287C260B543A00DEFB7D /* SupportingFiles */,
 				6491285F260B538D00DEFB7D /* FotoFromFacebookTests */,
 				6491286A260B538D00DEFB7D /* FotoFromFacebookUITests */,
 				64912847260B538B00DEFB7D /* Products */,
@@ -99,12 +100,8 @@
 		64912848260B538B00DEFB7D /* FotoFromFacebook */ = {
 			isa = PBXGroup;
 			children = (
-				64912849260B538B00DEFB7D /* AppDelegate.swift */,
-				6491284B260B538B00DEFB7D /* SceneDelegate.swift */,
 				6491284D260B538B00DEFB7D /* ViewController.swift */,
 				6491284F260B538B00DEFB7D /* Main.storyboard */,
-				64912852260B538C00DEFB7D /* Assets.xcassets */,
-				64912854260B538C00DEFB7D /* LaunchScreen.storyboard */,
 				64912857260B538C00DEFB7D /* Info.plist */,
 			);
 			path = FotoFromFacebook;
@@ -126,6 +123,17 @@
 				6491286D260B538D00DEFB7D /* Info.plist */,
 			);
 			path = FotoFromFacebookUITests;
+			sourceTree = "<group>";
+		};
+		6491287C260B543A00DEFB7D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				64912849260B538B00DEFB7D /* AppDelegate.swift */,
+				6491284B260B538B00DEFB7D /* SceneDelegate.swift */,
+				64912852260B538C00DEFB7D /* Assets.xcassets */,
+				64912854260B538C00DEFB7D /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
