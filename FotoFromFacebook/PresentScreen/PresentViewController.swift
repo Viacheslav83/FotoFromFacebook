@@ -7,9 +7,11 @@
 
 import UIKit
 
-class PresentViewController: UIViewController {
+class PresentViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var imageView: UIImageView!
+    
+    var coordinator: PresentCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()

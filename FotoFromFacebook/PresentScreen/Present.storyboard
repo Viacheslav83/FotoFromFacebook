@@ -11,7 +11,7 @@
         <!--Present View Controller-->
         <scene sceneID="xbs-6m-asj">
             <objects>
-                <viewController id="RDw-2g-kuy" customClass="PresentViewController" customModule="FotoFromFacebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PresentViewController" id="RDw-2g-kuy" customClass="PresentViewController" customModule="FotoFromFacebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UHb-rK-W8m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -12,7 +12,7 @@
         <!--Images View Controller-->
         <scene sceneID="ce2-0P-YAJ">
             <objects>
-                <viewController id="NEr-iF-V2v" customClass="ImagesViewController" customModule="FotoFromFacebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImagesViewController" id="NEr-iF-V2v" customClass="ImagesViewController" customModule="FotoFromFacebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7L8-YC-plh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4ux-uy-2vZ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4ux-uy-2vZ" customClass="Im">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zUM-uX-u4t">

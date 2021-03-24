@@ -7,9 +7,11 @@
 
 import UIKit
 
-class ImagesViewController: UIViewController {
+class ImagesViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var coordinator: ImagesCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
