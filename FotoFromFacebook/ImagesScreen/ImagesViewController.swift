@@ -1,5 +1,5 @@
 //
-//  PresentViewController.swift
+//  ImagesViewController.swift
 //  FotoFromFacebook
 //
 //  Created by Viacheslav Markov on 24.03.2021.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class PresentViewController: UIViewController {
+class ImagesViewController: UIViewController {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,16 +8,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Present View Controller-->
         <scene sceneID="xbs-6m-asj">
             <objects>
-                <viewController id="RDw-2g-kuy" customClass="LoginViewController" customModule="FotoFromFacebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RDw-2g-kuy" customClass="PresentViewController" customModule="FotoFromFacebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UHb-rK-W8m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aRl-bo-cgw">
+                                <rect key="frame" x="0.0" y="76" width="414" height="786"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rfI-0W-sDJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rfI-0W-sDJ" firstAttribute="bottom" secondItem="aRl-bo-cgw" secondAttribute="bottom" id="4No-Ao-Gk9"/>
+                            <constraint firstItem="rfI-0W-sDJ" firstAttribute="trailing" secondItem="aRl-bo-cgw" secondAttribute="trailing" id="gZq-ag-Ne8"/>
+                            <constraint firstItem="aRl-bo-cgw" firstAttribute="leading" secondItem="rfI-0W-sDJ" secondAttribute="leading" id="kUV-hw-IOJ"/>
+                            <constraint firstItem="aRl-bo-cgw" firstAttribute="top" secondItem="rfI-0W-sDJ" secondAttribute="top" constant="32" id="rch-9f-c6J"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="aRl-bo-cgw" id="2lu-Fp-DZy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYn-Vc-woj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
