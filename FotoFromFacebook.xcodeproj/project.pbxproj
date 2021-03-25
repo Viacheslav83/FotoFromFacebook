@@ -21,6 +21,7 @@
 		64535FB5260B9669003717CF /* PresentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64535FB4260B9669003717CF /* PresentViewModel.swift */; };
 		64535FD2260BA114003717CF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64535FD0260BA114003717CF /* ImageCollectionViewCell.swift */; };
 		64535FD3260BA114003717CF /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64535FD1260BA114003717CF /* ImageCollectionViewCell.xib */; };
+		64535FE5260C8BEC003717CF /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64535FE4260C8BEC003717CF /* CurrentUser.swift */; };
 		6491284A260B538B00DEFB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64912849260B538B00DEFB7D /* AppDelegate.swift */; };
 		6491284C260B538B00DEFB7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6491284B260B538B00DEFB7D /* SceneDelegate.swift */; };
 		6491284E260B538B00DEFB7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6491284D260B538B00DEFB7D /* LoginViewController.swift */; };
@@ -58,10 +59,11 @@
 		64535F7A260B7B9B003717CF /* ImagesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCoordinator.swift; sourceTree = "<group>"; };
 		64535F96260B8ED5003717CF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		64535FA4260B938E003717CF /* PresentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCoordinator.swift; sourceTree = "<group>"; };
-		64535FAF260B9650003717CF /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagesViewModel.swift; path = ../../../../../ImagesViewModel.swift; sourceTree = "<group>"; };
-		64535FB4260B9669003717CF /* PresentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PresentViewModel.swift; path = ../../../../../PresentViewModel.swift; sourceTree = "<group>"; };
+		64535FAF260B9650003717CF /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
+		64535FB4260B9669003717CF /* PresentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentViewModel.swift; sourceTree = "<group>"; };
 		64535FD0260BA114003717CF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		64535FD1260BA114003717CF /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		64535FE4260C8BEC003717CF /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		64912846260B538B00DEFB7D /* FotoFromFacebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FotoFromFacebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64912849260B538B00DEFB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6491284B260B538B00DEFB7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				64535F5C260B753F003717CF /* ImagesScreen */,
 				64535F4B260B738D003717CF /* PresentScreen */,
 				64535F7F260B8950003717CF /* Extension */,
+				64535FE4260C8BEC003717CF /* CurrentUser.swift */,
 			);
 			path = FotoFromFacebook;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				6491284C260B538B00DEFB7D /* SceneDelegate.swift in Sources */,
 				64535FB0260B9650003717CF /* ImagesViewModel.swift in Sources */,
 				64535F70260B7A92003717CF /* LoginCoordinator.swift in Sources */,
+				64535FE5260C8BEC003717CF /* CurrentUser.swift in Sources */,
 				64535F6B260B7A54003717CF /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, Storyboarded {
     @IBOutlet weak var loginButton: UIButton!
     
     var coordinator: LoginCoordinator?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

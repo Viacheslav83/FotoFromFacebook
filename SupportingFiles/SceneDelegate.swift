@@ -10,7 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-    var loginCoordinator: LoginCoordinator!
+    var curentUser = CurrentUser()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // 1
@@ -24,8 +24,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // 3
         let navController = UINavigationController()
-        loginCoordinator = LoginCoordinator(navigationController: navController)
-        loginCoordinator.start()
+        if curentUser.isCurentUser() {
+            var imagesCoordinator: ImagesCoordinator!
+            imagesCoordinator = ImagesCoordinator(navigationController: navController)
+            imagesCoordinator.start()
+        } else {
+            let loginCoordinator = LoginCoordinator(navigationController: navController)
+            loginCoordinator.start()
+        }
+        
+//        let navController = UINavigationController()
+//        loginCoordinator = LoginCoordinator(navigationController: navController)
+//        loginCoordinator.start()
         
         // 4
         appWindow.rootViewController = navController
