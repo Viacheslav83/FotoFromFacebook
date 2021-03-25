@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-    var curentUser = CurrentUser()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // 1
@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // 3
         let navController = UINavigationController()
-        if curentUser.isCurentUser() {
+        if AccessToken.current != nil {
             var imagesCoordinator: ImagesCoordinator!
             imagesCoordinator = ImagesCoordinator(navigationController: navController)
             imagesCoordinator.start()
@@ -32,10 +32,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let loginCoordinator = LoginCoordinator(navigationController: navController)
             loginCoordinator.start()
         }
-        
-//        let navController = UINavigationController()
-//        loginCoordinator = LoginCoordinator(navigationController: navController)
-//        loginCoordinator.start()
         
         // 4
         appWindow.rootViewController = navController
