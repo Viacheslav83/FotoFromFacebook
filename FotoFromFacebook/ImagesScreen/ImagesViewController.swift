@@ -28,8 +28,7 @@ class ImagesViewController: UIViewController, Storyboarded {
 
 extension ImagesViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        print("You tapped \(indexPath.row) cell")
-//        (at: indexPath.row, from: viewModel?.numberOfImages ?? 1)
+
         let numberFromCount = "\(indexPath.row + 1)" + "/" + "\(viewModel?.numberOfImages ?? 1)"
         coordinator?.displayPresent(atFoto: viewModel?.getImage(at: indexPath.row),
                                     number: numberFromCount)
