@@ -15,7 +15,7 @@ class FacebookManager {
     public class func getUserData(completion: @escaping () -> Void) {
         if AccessToken.current != nil {
             GraphRequest(graphPath: "me",
-                         parameters: ["fields": "name, photos, picture"]).start
+                         parameters: ["fields": "name, email"]).start
                 { (connection, result, error) in
                             if error == nil {
                                 let json = JSON(result)
@@ -26,4 +26,5 @@ class FacebookManager {
                          }
         }
     }
+ 
 }

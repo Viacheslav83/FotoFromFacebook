@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eeQ-UX-gtg">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="52" width="414" height="810"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aXe-zc-ooG">
                                     <size key="itemSize" width="128" height="128"/>
@@ -42,7 +42,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Grk-Uu-S4l" firstAttribute="bottom" secondItem="eeQ-UX-gtg" secondAttribute="bottom" id="PhY-ba-9Qs"/>
-                            <constraint firstItem="eeQ-UX-gtg" firstAttribute="top" secondItem="Grk-Uu-S4l" secondAttribute="top" id="oPP-mX-9kc"/>
+                            <constraint firstItem="eeQ-UX-gtg" firstAttribute="top" secondItem="Grk-Uu-S4l" secondAttribute="top" constant="8" id="oPP-mX-9kc"/>
                             <constraint firstItem="Grk-Uu-S4l" firstAttribute="trailing" secondItem="eeQ-UX-gtg" secondAttribute="trailing" id="qbt-Ph-pqf"/>
                             <constraint firstItem="eeQ-UX-gtg" firstAttribute="leading" secondItem="Grk-Uu-S4l" secondAttribute="leading" id="qqD-Jc-BvY"/>
                         </constraints>

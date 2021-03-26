@@ -20,7 +20,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
         return UINib(nibName: "ImageCollectionViewCell", bundle: nil)
     }
     
-    func configure(with image: UIImage) {
+    func configure(with image: UIImage?) {
         imageView.image = image
     }
 

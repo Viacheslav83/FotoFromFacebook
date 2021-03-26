@@ -17,9 +17,7 @@ class ImagesCoordinator: Coordinator {
 
     func start() {
         let imagesCoordinator = ImagesViewController.instantiate()
-        let imagesViewModel = ImagesViewModel()
         imagesCoordinator.coordinator = self
-        imagesCoordinator.viewModel = imagesViewModel
         navigationController.pushViewController(imagesCoordinator, animated: true)
     }
     
